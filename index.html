@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI 服务方案清单</title><meta name="description" content="八项AI服务方案，涵盖引流、内容制作、销售跟进与团队协作。"><style>/* Hallmark · shape: Long Document · genre: editorial · theme: Ink (deal 1/3) · job: hire · draw: 89b5fd
+ * hero: Banner · nav: document masthead · footer: colophon block · imagery: none · signature: eight numbered service entries · ink: paper
+ * axes: light/grotesk-sans/chromatic-teal · posture: restrained · copy: verbatim · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V4 · weakest: hierarchy, each service shares a consistent input and output reading path */
+/* Hallmark · waive 22 · ink and greys at zero chroma · the service menu is printed in plain black with one teal signal */
+:root {
+  color-scheme: light;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  --color-paper: oklch(99.5% 0.003 100); --color-paper-2: oklch(97% 0.004 100); --color-paper-3: oklch(94% 0.006 100);
+  --color-ink: oklch(16% 0 0); --color-ink-2: oklch(28% 0 0); --color-muted: oklch(44% 0 0);
+  --color-rule: oklch(89% 0.004 100); --color-rule-2: oklch(93.5% 0.003 100);
+  --color-accent: oklch(50% 0.095 188); --color-accent-ink: oklch(99.5% 0.003 100); --color-accent-soft: oklch(93% 0.05 190); --color-accent-soft-ink: oklch(27% 0.045 190);
+  --color-focus: oklch(50% 0.095 188);
+  --font-display: "Epilogue", ui-sans-serif, system-ui, sans-serif; --font-body: var(--font-display);
+  --font-outlier: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-card: 12px; --radius-pill: 999px; --rule-hair: 1px;
+  --shadow-card: 0 20px 40px oklch(20% 0 0 / 0.16);
+  --tracking-display: -0.04em; --display-weight: 700;
+}
+
+:root { --font-display: 'Epilogue', 'PingFang SC', 'Microsoft YaHei', sans-serif; --font-body: var(--font-display); --space-zero: 0; --space-doc: 28px; --space-sheet: 52px; --space-print: 12mm; }
+html,body { overflow-x:clip; scrollbar-color:var(--color-muted) var(--color-paper); }
+body { margin:var(--space-zero); background:var(--color-paper); color:var(--color-ink); font-family:var(--font-body); font-size:16px; line-height:1.75; }
+* { box-sizing:border-box; }
+.container { width:100%; max-width:1240px; margin-inline:auto; padding-inline:var(--space-xl); }
+.mast { display:flex; justify-content:space-between; align-items:center; padding-block:var(--space-lg); border-bottom:1px solid var(--color-rule); font-size:14px; }
+.mast span:last-child { color:var(--color-muted); }
+.hero { padding-block:var(--space-sheet); }
+h1,h2,h3 { font-family:var(--font-display); overflow-wrap:break-word; min-width:0; text-wrap:balance; color:var(--color-ink); }
+h1 { font-size:clamp(2.6rem,1.6rem + 3vw,4.75rem); line-height:1.18; letter-spacing:-.04em; margin:var(--space-zero); font-weight:700; }
+.lead { font-size:18px; color:var(--color-ink-2); margin-block:var(--space-lg) var(--space-xl); max-width:65ch; }
+.index { display:flex; flex-wrap:wrap; gap:var(--space-sm); }
+a { color:var(--color-ink); text-underline-offset:4px; }
+.index a { min-height:44px; display:inline-flex; align-items:center; padding:var(--space-xs) var(--space-md); border:1px solid var(--color-rule); border-radius:var(--radius-pill); font-size:14px; text-decoration:none; white-space:nowrap; }
+a:hover { color:var(--color-accent); border-color:var(--color-accent); }
+a:active { opacity:.7; }
+a:focus-visible { outline:2px solid var(--color-focus); outline-offset:4px; }
+.services { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:var(--space-xl); }
+.service { padding-block:var(--space-xl) var(--space-sheet); border-top:2px solid var(--color-ink); min-width:0; container-type:inline-size; }
+.service h2 { font-size:clamp(1.5rem,1.2rem + .6vw,1.85rem); line-height:1.4; margin:var(--space-zero); font-weight:700; }
+
+.promise { margin-block:var(--space-sm) var(--space-lg); color:var(--color-muted); font-size:16px; }
+dl { margin:var(--space-zero); }
+.field { display:grid; grid-template-columns:4em minmax(0,1fr); gap:var(--space-md); padding-block:var(--space-md); border-top:1px solid var(--color-rule); }
+dt { font-size:14px; color:var(--color-muted); padding-top:var(--space-zero); }
+dd { margin:var(--space-zero); color:var(--color-ink-2); font-size:16px; line-height:1.8; }
+.output dd { color:var(--color-ink); font-weight:600; }
+footer { display:flex; justify-content:space-between; gap:var(--space-lg); border-top:1px solid var(--color-ink); padding-block:var(--space-lg) var(--space-xl); color:var(--color-muted); font-size:14px; }
+::selection { background:var(--color-accent-soft); color:var(--color-accent-soft-ink); }
+@container (max-width:360px) { .field { grid-template-columns:minmax(0,1fr); gap:var(--space-xs); } }
+@media(max-width:760px) { .container { padding-inline:var(--space-lg); } .services { grid-template-columns:minmax(0,1fr); } .hero { padding-block:var(--space-xl); } .mast { align-items:flex-start; gap:var(--space-md); } .service { padding-bottom:var(--space-xl); } footer { flex-direction:column; } }
+@media print { @page { size:A4; margin:14mm; } .container { max-width:none; padding:var(--space-zero); } .hero { padding-block:var(--space-lg); } h1 { font-size:30pt; } .lead { font-size:11pt; } .index { display:none; } .services { display:block; } .service { break-inside:avoid; padding-block:var(--space-lg); } .service h2 { font-size:18pt; } .field { padding-block:var(--space-sm); } dd { font-size:10pt; } dt,.promise { font-size:10pt; } footer { margin-top:var(--space-lg); } }
+</style></head><body><main class="container"><nav class="mast" aria-label="文档信息"><span>AI 服务方案清单</span><span>8 项方案 / 获客与运营</span></nav><header class="hero"><h1>让 AI 参与<br>每一项具体业务。</h1><p class="lead">从种草引流、内容制作到销售跟进与团队协作，找到适合自己的应用方向。</p><nav class="index" aria-label="方案导航"><a href="#s1">种草引流</a><a href="#s2">内容制作</a><a href="#s5">销售跟进</a><a href="#s6">协作与情报</a></nav></header><section class="services" aria-label="八项服务方案"><article class="service" id="s1" aria-labelledby="t1"><h2 id="t1"><span class="number">01</span>种草引流 Agent</h2><p class="promise">把评论里的意向，接成可跟进的线索。</p><dl><div class="field "><dt>适用客户</dt><dd>小红书、抖音发种草内容，引流至私域的公司，如装修、教育、加盟、医美、电商。</dd></div><div class="field "><dt>核心痛点</dt><dd>发完内容还要盯评论区。问价、要联系方式、咨询加盟，人工逐条回复、引导加企微；量大时忙不过来，漏接就意味着流失。</dd></div><div class="field "><dt>输入</dt><dd>要监控的平台账号；意向关键词，如“多少钱”“怎么买”“怎么加盟”“联系”；企微或私域入口。</dd></div><div class="field output"><dt>输出</dt><dd>自动扫描评论区 → 识别留资意向 → 回复并引导进入企微或私域 → 添加后发送加盟表或产品手册做初筛 → 低意向过滤，高意向转人工。</dd></div></dl></article><article class="service" id="s2" aria-labelledby="t2"><h2 id="t2"><span class="number">02</span>去 AI 味种草文案批量生成</h2><p class="promise">让卖点、痛点、利益点各就其位。</p><dl><div class="field "><dt>适用客户</dt><dd>需要在多个平台发布种草内容的运营团队。</dd></div><div class="field "><dt>核心痛点</dt><dd>AI 仿写重复率高、AI 味重；浅层种草逻辑混乱，卖点、痛点、利益点的位置安排不清。</dd></div><div class="field "><dt>输入</dt><dd>目标客户画像；产品功能；价格；活动机制。</dd></div><div class="field output"><dt>输出</dt><dd>生成适配小红书、抖音、视频号的种草文案，内置去重和去 AI 味处理；可指定“焦虑钩子”或“功能实测”等表达方向。</dd></div></dl></article><article class="service" id="s3" aria-labelledby="t3"><h2 id="t3"><span class="number">03</span>商品主图 / 详情页自动生成</h2><p class="promise">从一张商品图，延展整套展示内容。</p><dl><div class="field "><dt>适用客户</dt><dd>电商公司，以及建材、食品、设备等有商品展示需求的传统行业。</dd></div><div class="field "><dt>核心痛点</dt><dd>每上一个新品都要拍主图、写详情页。外包贵、自己做慢，SKU 一多就跟不上。</dd></div><div class="field "><dt>输入</dt><dd>随手拍或白底商品图；产品卖点；规格参数。</dd></div><div class="field output"><dt>输出</dt><dd>生成抖音、淘宝风格的商品主图，提供多套模板选择；同步产出详情页文案与排版建议。</dd></div></dl></article><article class="service" id="s4" aria-labelledby="t4"><h2 id="t4"><span class="number">04</span>直播话术 / 短视频脚本自动生成</h2><p class="promise">把商品信息，组织成完整的讲述节奏。</p><dl><div class="field "><dt>适用客户</dt><dd>直播团队、短视频运营团队。</dd></div><div class="field "><dt>核心痛点</dt><dd>每场直播、每条视频都要从零组织卖点与话术，费时间；团队里也并非每个人都擅长写转化型脚本。</dd></div><div class="field "><dt>输入</dt><dd>商品信息；活动机制，如“今天直播间 8 折＋买一送一”；目标时长。</dd></div><div class="field output"><dt>输出</dt><dd>整场直播话术串：安排抛钩子、推活动、促单的时机；或生成短视频脚本，包含分镜头、口播与字幕建议。</dd></div></dl></article><article class="service" id="s5" aria-labelledby="t5"><h2 id="t5"><span class="number">05</span>销售线索自动跟进 Agent</h2><p class="promise">让每一条留资，都有明确的跟进状态。</p><dl><div class="field "><dt>适用客户</dt><dd>加盟、教育、医美、企业服务等行业的销售团队。</dd></div><div class="field "><dt>核心痛点</dt><dd>每天收到几十上百条留资或表单，销售跟不过来，线索长期无人回应；老板也不清楚哪些已跟进、哪些无人管。</dd></div><div class="field "><dt>输入</dt><dd>留资渠道，如企微、表单、电话；跟进节奏规则。</dd></div><div class="field output"><dt>输出</dt><dd>自动发送跟进消息 → 记录客户状态 → 分类打标签 → 低意向自动降级，高意向立即提醒销售介入。</dd></div></dl></article><article class="service" id="s6" aria-labelledby="t6"><h2 id="t6"><span class="number">06</span>会议纪要自动整理与待办提醒</h2><p class="promise">把会上说过的事，变成会后可跟踪的待办。</p><dl><div class="field "><dt>适用客户</dt><dd>团队协作较多、开会频繁的公司。</dd></div><div class="field "><dt>核心痛点</dt><dd>会上分配了任务，转头就忘；事后翻记录，也很难快速找到谁负责什么、何时完成，老板无法掌握落实情况。</dd></div><div class="field "><dt>输入</dt><dd>会议录音或会议纪要文本；也可直接使用飞书、钉钉会议自动转录内容。</dd></div><div class="field output"><dt>输出</dt><dd>提取每个人的待办事项、截止时间与优先级 → 会后推送至企微、钉钉或飞书 → 到期前自动提醒 → 全局查看待办进度。</dd></div></dl></article><article class="service" id="s7" aria-labelledby="t7"><h2 id="t7"><span class="number">07</span>多平台客服统一工作台与负反馈预警</h2><p class="promise">统一接待入口，及时发现重复出现的问题。</p><dl><div class="field "><dt>适用客户</dt><dd>在多个平台销售产品或服务的公司。</dd></div><div class="field "><dt>核心痛点</dt><dd>抖店、淘宝、京东、小红书、企微各有后台，客服反复切换；负反馈分散，运营看不到趋势，往往到大面积爆发才察觉。</dd></div><div class="field "><dt>输入</dt><dd>各平台店铺或账号授权；负反馈关键词库。</dd></div><div class="field output"><dt>输出</dt><dd>多平台客服接入统一后台回复；同类负反馈达到设定阈值时自动预警。例如，3 天内有 10 人反馈“包装破损”，自动通知运营。</dd></div></dl></article><article class="service" id="s8" aria-labelledby="t8"><h2 id="t8"><span class="number">08</span>行业 / 竞品情报自动采集推送</h2><p class="promise">把每天刷信息，变成定时收到有效更新。</p><dl><div class="field "><dt>适用客户</dt><dd>需要持续关注招投标、加盟、竞品动态或行业资讯的公司。</dd></div><div class="field "><dt>核心痛点</dt><dd>每天人工查看多个网站，追踪新标的、竞品上新、改价或广告动作，费时间且容易遗漏。</dd></div><div class="field "><dt>输入</dt><dd>指定采集源；关键词；推送频率。</dd></div><div class="field output"><dt>输出</dt><dd>定时采集、整理、去重后推送至企微、钉钉或飞书；可选择“有新内容才推送”，或“每天早上 9 点汇总推送”。</dd></div></dl></article></section><footer><span>AI 服务方案清单</span><span>适用客户 / 核心痛点 / 输入 / 输出</span></footer></main></body></html>
